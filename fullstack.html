@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>full stack - page</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 40% 60%;  
+            height: 100vh;
+        }
+        /* leftside */
+        .container .leftside{
+            background:linear-gradient(pink,lightblue); 
+            display:block;  
+            color: white;  
+        }
+        .container .leftside .one h2{
+            margin-top: 200px;
+            margin-left: 200px;
+        }
+        .container .leftside .one h4{
+            margin: 0;
+            margin-left: 200px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container .leftside .two h1{
+            font-size: 50px;
+            margin-left: 180px;
+        }
+        .container .leftside .two h4{
+            margin-left: 200px;
+            font-size: 20px;
+        }
+        .container .leftside .three h4{
+            margin-right: 50px;
+            font-size: 20px;
+            text-align: center;
+        }
+       
+        
+        /* rightside */
+        .container .rightside{
+            margin-left: 30px;
+        }
+        .container .rightside input{
+            box-shadow: 0px 0px  10px black;
+        }
+        .container .rightside h2{
+            font-size: 30px;
+           
+        }
+        .container .rightside .lab{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            
+        }
+        .container .rightside .lab input{
+            width: 200px;
+            height: 30px;
+        }
+        .container .rightside .lab2{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: auto auto;
+
+        }
+        .container .rightside .lab2 input{
+            width: 350px;
+            height: 30px;
+        }
+        /* textarea */
+        .container .rightside .message textarea{
+            margin-top: 20px;
+            width: 800px;
+        }
+        .container .rightside .must h4{
+            margin-top: 0;
+            text-align: right;
+            margin-right: 85px;
+            font-size: 20px;
+        }
+        /* passwd */
+
+        .container .rightside .pass{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .container .rightside .pass input{
+            width: 350px;
+            height: 30px;
+            padding-right: 20px;
+        }
+        /* button */
+
+        .container .rightside .btn{
+           display: flex;
+           margin-top: 30px;
+           
+
+        }
+        .container .rightside .btn .lbtn{
+            margin-top: 50px;
+            margin-left: 270px;
+            padding: 10px;
+            width: 100px;
+            border-radius: 25px;
+
+        }
+        .container .rightside .btn .rbtn{
+            margin-top: 50px;
+            margin-left: 100px;
+            padding: 10px;
+            width: 100px;
+            border-radius: 25px;
+        }
+        .container .rightside .btn .lbtn:hover{
+            background-color: blue;
+            color: white;
+        }
+        .container .rightside .btn .rbtn:hover{
+            background-color: blue;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="leftside">
+            <div class="one">
+                <h2>RJ</h2>
+            <h4>Technology</h4>
+            </div>
+            <div class="two">
+                <h1>M.VERVE</h1>
+                <h4>Inspired Applications</h4>
+            </div>
+            <div class="three">
+                <h4>
+                    To connect with us <br>
+                    please Enter the details
+                </h4>
+            </div>
+
+        </div>
+
+        <div class="rightside">
+            <h2>Create an account</h2>
+            <br>
+            <div class="lab">
+                <div class="fname">
+                    <label >Firstname</label><br>
+                    <input type="text" placeholder="First Name" >
+                </div>
+             <div class="lname">
+                <label >Last Name</label><br>
+                <input type="text" placeholder="Last Name">
+             </div>
+             <div class="age">
+                <label >Age</label><br>
+                <input type="number" placeholder="18-100">
+             </div>
+
+            </div>
+            <!-- lab2 -->
+            
+            <div class="lab2">
+                <div class="num">
+                    <label >Mobile Number</label><br>
+                    <input type="number" placeholder="** **">
+                </div>
+                <div class="email">
+                    <label >Email</label><br>
+                    <input type="email" placeholder="abc@xxx.zzz">
+                </div>
+
+            </div>
+            
+            <!-- textarea -->
+             <div class="message">
+                <br>
+                <label >Description</label><br>
+                <textarea cols="30" rows="10" placeholder="emailnc@gmail.com"></textarea>
+                
+             </div>
+             <div class="must">
+                <h4>Max.150 Characters</h4>
+             </div>
+
+             <!-- password -->
+             <div class="pass">
+                <div class="passw">
+                    <label >Password</label><br>
+                    <input type="password" placeholder="password">
+                </div>
+                <div class="cpassw">
+                    <label >Confirm Password</label><br>
+                    <input type="password" placeholder="password">
+                </div>
+              </div> 
+
+              <!-- button -->
+               <div class="btn">
+                <button class="lbtn">RESET</button>
+                <button class="rbtn">SUBMIT</button>
+               </div>
+            
+        </div>
+    </div>
+</body>
+</html>

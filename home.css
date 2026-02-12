@@ -1,0 +1,686 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.heading marquee{
+    padding: 10px;
+    background-color: orange;
+}
+.heading1{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    background-color: black;
+    color: white;
+}
+.heading1 ul{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    text-decoration: none;
+    margin-left: 30px;
+    padding: 5px;
+    font-size: large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.heading1 ul a:hover{
+    color: red;
+    cursor: pointer;
+}
+.heading1 li{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+.heading1 ol{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.heading ol a{
+    font-size: 25px;
+    color: white;
+}
+/* nav menu */
+
+.nav{
+    display: grid;
+    grid-template-columns: 25% 60% 15%;
+    background-color: rgb(147, 223, 136);
+    padding: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    align-items: center;
+
+}
+
+.nav .logo{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: green;
+    margin-left: 20px;
+    font-family: cursive;  
+}
+.nav .menu{
+    text-align: center;
+}
+.nav a{
+    padding: 25px;
+    margin-left: 10px;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    color: black;
+    font-weight: 300;
+}
+.heading .nav .menu a:hover{
+    background-color: white;
+    color: red;
+
+}
+
+
+.child{
+    display: none;
+    /* width: 100px; */
+    position: absolute;
+    margin-top: 32px;
+}
+.child a{
+    background-color:lightcyan;
+    margin-left: 20px;
+}
+
+.parent:hover .child{
+    display: block;
+    position: absolute;
+    margin-left: 21.5%;
+}
+
+/* form section */
+.sister{
+    display: none;
+    position: absolute;
+    left: 60%;
+    top: 30%;
+    background-color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+
+}
+.sister h3{
+    font-family: cursive;
+
+}
+.sister .ftop{
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: rgb(11, 11, 11);
+    background-color: rgb(58, 80, 203);
+    /* padding: 5px; */
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.sister .inputs input{
+    margin-top: 20px;
+    width: 400px;
+    height: 30px;
+    text-align: center;
+}
+.sister .inputs select{
+    margin-top: 20px;
+    width: 400px;
+    height: 35px;
+    text-align: center;
+}
+.sister button{
+    /* margin-top: 20px; */
+    width: 400px;
+    height: 35px;
+    font-family: cursive;
+    border-radius: 10px;
+    background-color: rgb(58, 80, 203);
+}
+
+
+.brother:hover .sister{
+    display: block;
+    position: absolute;
+}
+
+.bb{
+    background-color: green;
+    border-radius: 20%;
+}
+
+/* main section */
+
+/* content 1 */
+
+.main{
+    background-image: url(img1.jpg);
+    width: 100%;
+    height: 600px;
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    animation: helo 13s infinite;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main .text h1{
+    margin-top: 150px;
+    margin-left: 7%;
+    font-size: 40px;
+    color: white;
+}
+.main .text p{
+    /* margin-top: 250px; */
+    margin-left:7%;
+    width: 50%;
+    font-family: cursive;
+}
+.main .text button{
+    margin-left: 7%;
+    padding: 10px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+}
+
+.applyform{
+    display: none;
+    background-color: rgb(238, 238, 235);
+    width: 300px;
+    height: 300px;
+    padding: 40px;
+    position: absolute;
+    left: 25%;
+    top: 40%;
+    border-radius:5%;
+
+}
+.applyform label{
+    padding-left: 80px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.applyform textarea{
+    padding: 20px;
+    margin-top: 20px;
+    width: 220px;
+}
+
+.applyform input{
+    /* text-align: center; */
+    align-items: center;
+    padding-left: 30%;
+    margin-top: 20px;
+    height: 30px;
+}
+.happy{
+    background-color: yellow;
+}
+.lbutton:hover .applyform{
+    display: block;
+}
+
+
+@keyframes helo{
+    20%{
+        background-image: url(img2.jpg);
+    }
+    40%{
+        background-image: url(img3.jpg);
+    }
+    60%{
+        background-image: url(img4.jpg);
+    }
+    80%{
+        background-image: url(img5.jpg);
+    }
+    100%{
+        background-image: url(img6.jpg);
+    }
+}
+
+
+/* content 2 */
+.key h1{
+    margin-top: 30px;
+    text-align: center;
+}
+.key p{
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+}
+.keyicons{
+    display: grid;
+    grid-template-columns: 20% 30% 30% 20%;
+    margin-top: 70px;
+    position: absolute;  
+}
+
+.keyicons a{
+    background-color: rgb(147, 140, 140);
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.keyicons .icon1 a{
+    margin-left: 160px;
+}
+.keyicons .icon2 a{
+    margin-left: 300px;
+}
+.keyicons .icon3 a{
+    margin-left: 280px;
+}
+.keyicons .icon4 a{
+    margin-left: 250px;
+}
+
+.keyitems{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-column-gap: 10px;
+    height: 230px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    color: white;
+    
+}
+.keyitems .item1{
+    padding-top: 40px;
+    padding: 20px;
+    background-color: rgb(68, 197, 68);
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 30px;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+
+}
+.keyitems .item1:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 10px 10px 50px black;
+}
+
+.keyitems .item2{
+    padding-top: 40px;
+    padding: 20px;
+    background-color: rgb(68, 197, 68);
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 30px;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+
+}
+.keyitems .item2:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 10px 10px 50px black;
+}
+.keyitems .item3{
+    padding-top: 40px;
+    padding: 20px;
+    background-color: rgb(68, 197, 68);
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 30px;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+
+}
+.keyitems .item3:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 10px 10px 50px black;
+}
+.keyitems .item4{
+    padding-top: 40px;
+    padding: 20px;
+    background-color: rgb(68, 197, 68);
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 30px;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+
+}
+.keyitems .item4:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 10px 10px 50px black;
+}
+
+/* content 3 */
+
+.course{
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.tabel{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 30px;
+    margin-top: 80px;
+    text-align: center;
+    margin-left: 60px;
+    height: 300px;
+}
+
+
+/* full stack */
+
+.tabel .fullstack{
+    border-radius: 5px;
+    margin-bottom: 100px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px  10px black;
+}
+.tabel .fullstack h3{
+    margin: 0;
+    height: 40px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgb(38, 216, 160);
+    color: white;
+}
+.tabel .fullstack h4{
+    margin-top: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tabel .fullstack a{
+    color: rgb(239, 239, 10);
+    font-size: 25px;
+}
+.tabel .fullstack button{
+    padding: 10px;
+    width: 150px;
+    background-color: rgb(25, 145, 107);
+}
+.tabel .fullstack button a{
+    color: blue;
+    font-size: 15px;
+    text-decoration: none;
+}
+.tabel .fullstack button a:hover{
+    color: red;
+}
+
+/* Frontend */
+
+.tabel .frontend{
+    background-color: #ffffff;
+    box-shadow: 0px 0px  10px black;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+.tabel .frontend h3{
+    margin: 0;
+    height: 40px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgb(38, 216, 160);
+    color: white;
+}
+.tabel .frontend h4{
+    margin-top: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tabel .frontend a{
+    color: rgb(239, 239, 10);
+    font-size: 25px;
+}
+.tabel .frontend button{
+    padding: 10px;
+    width: 150px;
+    background-color: rgb(25, 145, 107);
+}
+.tabel .frontend button a{
+    color: blue;
+    font-size: 15px;
+    text-decoration: none;
+}
+.tabel .frontend button a:hover{
+    color: red;
+}
+
+/* Back End  */
+
+.tabel .backend{
+    background-color: #ffffff;
+    box-shadow: 0px 0px  10px black;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+.tabel .backend h3{
+    margin: 0;
+    height: 40px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgb(38, 216, 160);
+    color: white;
+}
+.tabel .backend h4{
+    margin-top: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tabel .backend a{
+    color: rgb(239, 239, 10);
+    font-size: 25px;
+}
+.tabel .backend button{
+    padding: 10px;
+    width: 150px;
+    background-color: rgb(25, 145, 107);
+    margin-bottom: 30px;
+}
+
+.tabel .backend button a{
+    color: blue;
+    font-size: 15px;
+    text-decoration: none;
+}
+.tabel .backend button a:hover{
+    color: red;
+}
+/* data Science */
+
+.tabel .datascience{
+    background-color: #ffffff;
+    box-shadow: 0px 0px  10px black;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+.tabel .datascience h3{
+    margin: 0;
+    height: 40px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgb(38, 216, 160);
+    color: white;
+}
+.tabel .datascience h4{
+    margin-top: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tabel .datascience a{
+    color: rgb(239, 239, 10);
+    font-size: 25px;
+}
+.tabel .datascience button{
+    padding: 10px;
+    width: 150px;
+    background-color: rgb(25, 145, 107);
+}
+.tabel .datascience button a{
+    color: blue;
+    font-size: 15px;
+    text-decoration: none;
+}
+.tabel .datascience button a:hover{
+    color: red;
+}
+
+/* aws */
+
+.tabel .aws{
+    background-color: #ffffff;
+    box-shadow: 0px 0px  10px black;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+.tabel .aws h3{
+    margin: 0;
+    height: 40px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgb(38, 216, 160);
+    color: white;
+}
+.tabel .aws h4{
+    margin-top: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tabel .aws a{
+    color: rgb(239, 239, 10);
+    font-size: 25px;
+}
+.tabel .aws button{
+    padding: 10px;
+    width: 150px;
+    background-color: rgb(25, 145, 107);
+}
+.tabel .aws button a{
+    color: blue;
+    font-size: 15px;
+    text-decoration: none;
+}
+.tabel .aws button a:hover{
+    color: red;
+}
+
+/* devops */
+
+.tabel .devops{
+    background-color: #ffffff;
+    box-shadow: 0px 0px  10px black;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+.tabel .devops h3{
+    margin: 0;
+    height: 40px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgb(38, 216, 160);
+    color: white;
+}
+.tabel .devops h4{
+    margin-top: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tabel .devops a{
+    color: rgb(239, 239, 10);
+    font-size: 25px;
+}
+.tabel .devops button{
+    padding: 10px;
+    width: 150px;
+    background-color: rgb(25, 145, 107);
+    margin-bottom: 30px;
+}
+.tabel .devops button a{
+    color: blue;
+    font-size: 15px;
+    text-decoration: none;
+}
+.tabel .devops button a:hover{
+    color: red;
+}
+
+/* footer */
+.last {
+    margin-top: 600px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color:rgb(199, 213, 221);
+    height: 400px;
+
+}
+.last h3{
+    font-size: 25px;
+    font-weight: 800;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.last .tech p{
+    text-align: justify;
+    margin-left: 30px;
+    font-size: 15px;
+    font-family:cursive;
+}
+.last .tech{
+    text-align: center;
+    margin-top: 40px;
+}
+.last .service{
+    text-align: center;
+    margin-top: 40px;
+}
+.last .service p{
+    padding-left: 40px;
+    text-align:initial;
+    margin-left: 30px;
+    font-size: 15px;
+    font-family:cursive;
+}
+.last .office{
+    text-align: center;
+    margin-top: 40px;
+}
+.last .office p{
+    padding-left: 40px;
+    text-align:initial;
+    margin-left: 30px;
+    font-size: 15px;
+    font-family:cursive;
+}
+.last .subs{
+    text-align: center;
+    margin-top: 40px;
+}
+.last .subs input{
+    height: 35px;
+    width: 250px;
+    margin-right: 10px;
+    text-align: center;
+}
+.last .subs a{
+    background-color: green;
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 9px;
+    color: black;
+}
+.last .subs div a{
+    background-color: green;
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+    margin-right: 15px;
+}
